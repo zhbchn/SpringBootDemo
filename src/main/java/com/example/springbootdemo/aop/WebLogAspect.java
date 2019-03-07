@@ -64,6 +64,6 @@ public class WebLogAspect {
     @AfterReturning(returning = "object",pointcut = "log()")
     public void doAfterReturn(Object object){
         logger.info("response={}",object.toString());
-        logger.info("################Request Start################");
+        logger.info("################Request End################");
     }
 }
